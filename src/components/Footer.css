@@ -6,6 +6,9 @@
   color: #fff;
   padding: 40px 60px;
   flex-wrap: wrap;
+  box-sizing: border-box;
+  width: 100%;
+  overflow: hidden;
 }
 
 /* overlap upward into previous section (starts into the image) */
@@ -22,6 +25,7 @@
   min-width: 250px;
   margin-right: 40px;
   padding-top: 16px;
+  box-sizing: border-box;
 }
 
 .footer-section h2 {
@@ -61,6 +65,16 @@
 
 /* On mobile, reduce gap for better fit */
 @media (max-width: 600px) {
+  .footer {
+    padding: 30px 16px;
+  }
+
+  .footer-section {
+    min-width: 100%;
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+
   .footer-social {
     gap: 16px;
   }

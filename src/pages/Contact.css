@@ -1,8 +1,25 @@
+/* contact.css */
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  overflow-x: hidden;
+}
+
+.contact-page {
+  overflow-x: hidden; /* Safety net */
+  width: 100%;
+  box-sizing: border-box;
+}
+
 .contact-page {
   min-height: 70vh;
-  padding: calc(var(--header-occupied-height, 32px) + 24px) 32px 40px;
+  /* Use a smaller side padding on mobile */
+  padding: calc(var(--header-occupied-height, 32px) + 24px) 20px 40px; 
   background: rgba(35, 32, 32, 0.85);
   color: #fff;
+  width: 100%;
 }
 
 .contact-container {
@@ -13,6 +30,9 @@
   gap: 60px;
   align-items: start;
   text-align: left;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0 20px;
 }
 
 /* Left Section */
@@ -97,6 +117,8 @@
   border-radius: 6px;
   color: #fff;
   font-family: inherit;
+  width: 100%;
+  box-sizing: border-box;
   font-size: 0.95rem;
   transition: border-color 0.2s;
   margin-bottom: 16px;
@@ -217,11 +239,15 @@
 
 @media (max-width: 600px) {
   .contact-page {
-    padding: calc(var(--header-occupied-height, 132px) + 16px) 16px 24px;
+    padding: calc(var(--header-occupied-height, 132px) + 16px) 12px 24px;
   }
 
   .contact-container {
     gap: 32px;
+    width: 100%;
+    padding: 0 8px;
+    /* Ensure the grid doesn't try to maintain two columns */
+    display: block;
   }
 
   .contact-info-section h2 {
@@ -229,17 +255,26 @@
   }
 
   .contact-form-section {
-    padding: 24px 16px;
+    padding: 20px 12px;
   }
 
   .contact-form .form-row {
     grid-template-columns: 1fr;
     gap: 12px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .field-group {
+    width: 100%;
   }
 
   .contact-form input,
   .contact-form textarea {
     margin-bottom: 12px;
+    width: 100%; /* Force inputs to stay inside the container */
+    max-width: 100%;
+    box-sizing: border-box;
   }
 
   .projects-grid {

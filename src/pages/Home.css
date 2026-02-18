@@ -1,3 +1,12 @@
+* {
+  box-sizing: border-box;
+}
+
+.home {
+  overflow-x: hidden; /* Prevent any horizontal sliding */
+  width: 100%;
+}
+
 .home {
   position: relative;
   min-height: 100vh;
@@ -39,6 +48,7 @@
 }
 
 .hero-content {
+  width: 100%;
   position: absolute;
   z-index: 2;
   left: 50%;
@@ -65,12 +75,14 @@
 }
 
 .home-content {
-  /* services container panel */
-  background: #222; /* solid color for services area */
+  background: #222;
   max-width: 1400px;
   margin: 0 auto;
-  padding: 40px 32px;
+  padding: 40px 20px; /* Reduced side padding for mobile */
   border-radius: 16px;
+  width: 100%; /* Ensure it stays within parent */
+  overflow: hidden; /* Clip anything that pokes out */
+  box-sizing: border-box;
 }
 
 .services-list {
@@ -79,6 +91,8 @@
   gap: 28px;
   margin: 32px 0;
   justify-items: center;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .service-card {
@@ -184,6 +198,12 @@
   transition: background-color 0.3s, box-shadow 0.3s;
   font-weight: 600;
 }
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 @media (max-width: 1300px) {
   .hero-content h1 { font-size: 2.6rem; }
   .hero-sub { font-size: 1rem; }

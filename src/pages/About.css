@@ -18,7 +18,7 @@
   color: #fff;
   max-width: 800px;
 }
-.about-content{ max-width: 1100px; margin: 2.5rem auto; padding: 2rem 1rem; background: transparent; border-radius:0; box-shadow: none; min-height: auto; }
+.about-content{ max-width: 1100px; margin: 2.5rem auto; padding: 2rem 1rem; background: transparent; border-radius:0; box-shadow: none; min-height: auto; width: 100%; box-sizing: border-box; }
 .about-grid{ display: none; }
 .about-section.full-width{
   background: rgba(6,10,12,0.85);
@@ -28,10 +28,15 @@
   margin-bottom: 2rem;
   display: flex;
   align-items: stretch;
+  box-sizing: border-box;
+  width: 100%;
+  overflow: hidden;
 }
 .section-inner{
   display: grid;
   grid-template-columns: 1fr 1fr;
+  box-sizing: border-box;
+  overflow: hidden;
   gap: 2rem;
   align-items: center;
   width: 100%;
@@ -115,5 +120,37 @@
 
   .about-section.full-width {
     padding: 1.5rem; /* Slightly less padding on mobile */
+  }
+}
+
+@media (max-width: 600px) {
+  .about-hero{
+    padding: clamp(1.5rem, 4vw, 3rem) 0;
+  }
+
+  .about-content {
+    padding: 1.5rem 0.75rem;
+  }
+
+  .section-inner {
+    gap: 1rem;
+  }
+
+  .section-image {
+    height: 150px;
+    max-width: 100%;
+  }
+
+  .about-section.full-width {
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .section-text h2 {
+    font-size: 1.3rem;
+  }
+
+  .about-hero h1 {
+    font-size: clamp(1.3rem, 3vw, 1.8rem);
   }
 }
