@@ -5,7 +5,7 @@ import { Helmet } from 'react-helmet-async';
 import { useLanguage } from '../context/LanguageContext';
 import { translations } from '../translations';
 import heroImg from '../assets/Landscaping/landscaping_01.webp';
-import owners from '../assets/About_us/owners.png';
+// import owners from '../assets/About_us/owners.png';
 import equipment from '../assets/About_us/bobcat.png';
 import warranty from '../assets/About_us/warranty.png';
 import clear_stone from '../assets/About_us/clear_stone.png';
