@@ -67,8 +67,6 @@ const Fences = () => {
       </header>
 
       <section className="service-content">
-        <p>{t('fencesIntro')}</p>
-
         <h2>{t('fencesTypesTitle')}</h2>
         <p><span className="svc-label">{t('fencesPVCLabel')}: </span><span className="svc-desc">{t('fencesPVCDesc')}</span></p>
         <p><span className="svc-label">{t('fencesHybridLabel')}: </span><span className="svc-desc">{t('fencesHybridDesc')}</span></p>

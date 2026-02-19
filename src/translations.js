@@ -27,7 +27,7 @@ export const translations = {
     designDesc: '3D Design - Digital 3D models of your project to plan layouts, elevations, and material choices before construction starts.',
     stampedDesc: 'Poured concrete surfaces featuring dyed and stamped patterns to resemble natural stone, slate, or brick.',
     pressureDesc: 'Deep cleaning pavers and applying fresh polymeric sand to joints to eliminate weeds and ensure proper drainage.',
-    pergolaDesc: 'Design and assembly of wood or PVC pergolas to add shade and structure to your backyard or patio.',
+    pergolaDesc: 'Design and assembly of wood or PVC pergolas to add shade and structure to your backyard or patio and maximize its space.',
     relevelDesc: 'Fixing cracked stones and re-leveling sunken interlock pads to correct pooling water and uneven surfaces.',
     
     // Service Names
@@ -68,7 +68,7 @@ export const translations = {
     // Projects Page
     projectsTitle: 'Our Projects',
     projectsPageTitle: 'Project Gallery - See Our Work | 3 Brothers Ottawa Landscaping',
-    projectsMetaDescription: 'Browse our landscaping project portfolio including interlock patios, decks, fences, retaining walls, and more in Ottawa. View before & after photos.',
+    projectsMetaDescription: 'Browse our landscaping project portfolio including interlock patios, decks, fences, retaining walls, and more in the Ottawa region. View before & after photos.',
     projectsGalleryTitle: 'Our Project Gallery',
     projectPhotoViewAlt: 'project photo - view enlarged',
 
@@ -154,7 +154,6 @@ export const translations = {
     // Fences Page
     fencesTitle: 'Fences',
     fencesHero: 'We install and repair vinyl, wood, and metal fences across Ottawa, providing durable, stylish, and low-maintenance solutions for any property.',
-    fencesIntro: 'We install and repair vinyl, wood, and metal fences across Ottawa, providing durable, stylish, and low-maintenance solutions for any property.',
     fencesTypesTitle: 'Fence Types',
     fencesPVCLabel: 'PVC Fences',
     fencesPVCDesc: 'Clean, modern, and low-maintenance.',
@@ -233,7 +232,7 @@ export const translations = {
     fences: 'Clôtures',
    
     // Home Page
-    homeTitle: '3 Brothers Ottawa Paysagisme | Entreprise de paysagisme à Ottawa',
+    homeTitle: '3 Brothers Ottawa Landscaping | Entreprise de paysagisme à Ottawa',
     heroTitle: 'Entreprise de paysagisme de la région d\'Ottawa en qui vous pouvez faire confiance',
     getQuote: 'Obtenir un devis',
     ourServices: 'Nos services',
@@ -289,7 +288,7 @@ export const translations = {
    
     // Projects Page
     projectsTitle: 'Nos projets',
-    projectsPageTitle: 'Éventail de projets | Nos travaux | 3 Brothers Ottawa Paysagisme',
+    projectsPageTitle: 'Éventail de projets | Nos travaux | 3 Brothers Ottawa Landscaping',
     projectsMetaDescription: 'Consultez notre éventail de projets de paysagisme comprenant des patios en pavés unis, terrasses, clôtures, murs de soutènement, et bien plus. Le tout dans la région d\'Ottawa. Examinez les photos avant et après.',
     projectsGalleryTitle: 'Notre éventail de projets',
     projectPhotoViewAlt: 'Photo du projet - vue agrandie',
@@ -381,7 +380,6 @@ export const translations = {
     // Fences Page
     fencesTitle: 'Clôtures',
     fencesHero: 'Nous installons et réparons des clôtures en vinyle, bois et métal dans la région d\'Ottawa, en offrant des solutions de longue durée, qui demandent peu d\'entretien et qui ont du style.',
-    fencesIntro: 'Nous installons et réparons des clôtures en vinyle, bois et métal dans la région d\'Ottawa, en offrant des solutions de longue durée, qui demandent peu d\'entretien et qui ont du style.',
     fencesTypesTitle: 'Types de clôtures',
     fencesPVCLabel: 'Clôtures PVC',
     fencesPVCDesc: 'Propres, modernes et facile d\'entretien.',
@@ -403,13 +401,13 @@ export const translations = {
    
     // Meta Tags
     metaDescription: '3 Brothers Ottawa Landscaping offre des services professionnels de paysagisme, pavage, construction de terrasses et de clôtures dans la région d\'Ottawa, ON. Devis gratuits. Téléphonez le (613) 798-3968.',
-    contactPageMeta: 'Communiquez avec 3 Brothers Ottawa Paysagisme pour un devis gratuit de paysagisme. Téléphonez le (613) 798-3968 ou remplissez notre formulaire. Nous desservons Ottawa, Ontario.',
-    contactTitle: 'Contactez-nous - Devis gratuit | 3 Brothers Ottawa Paysagisme',
-    projectAltSuffix: 'Exemple de projet - 3 Brothers Ottawa Paysagisme',
+    contactPageMeta: 'Communiquez avec 3 Brothers Ottawa Landscaping pour un devis gratuit de paysagisme. Téléphonez le (613) 798-3968 ou remplissez notre formulaire. Nous desservons Ottawa, Ontario.',
+    contactTitle: 'Contactez-nous - Devis gratuit | 3 Brothers Ottawa Landscaping',
+    projectAltSuffix: 'Exemple de projet - 3 Brothers Ottawa Landscaping',
     about: 'À propos',
-    aboutTitle: 'À propos de 3 Brothers Ottawa Paysagisme | Paysagistes de confiance dans la région d’Ottawa',
-    aboutMeta: '3 Brothers Ottawa Paysagisme — entreprise familiale offrant services de paysagisme, pavage, construction de terrasses et clôtures dans la région d\'Ottawa. Apprenez-en plus sur notre équipe et nos valeurs.',
-    aboutWhyTitle: 'Pourquoi choisir 3 Brothers Ottawa Paysagisme ?',
+    aboutTitle: 'À propos de 3 Brothers Ottawa Landscaping | Paysagistes de confiance dans la région d’Ottawa',
+    aboutMeta: '3 Brothers Ottawa Landscaping — entreprise familiale offrant services de paysagisme, pavage, construction de terrasses et clôtures dans la région d\'Ottawa. Apprenez-en plus sur notre équipe et nos valeurs.',
+    aboutWhyTitle: 'Pourquoi choisir 3 Brothers Ottawa Landscaping ?',
     aboutWhy: 'Chez 3 Brothers, nous croyons qu\'un bon aménagement paysager commence par une base solide. Nous sommes trois frères, de sang et de cœur, qui sommes nés et avons grandi dans la communauté et qui avons fondé 3 Brothers. Nous combinons discipline académique et 7 ans d\'expérience professionnelle sur le terrain. En tant qu’étudiants entièrement bilingues (anglais & français), dirigée par un diplômé universitaire, un futur ingénieur et un étudiant en gestion d\'entreprise, notre équipe apporte une valeur ajoutée unique à l\'industrie. Nos parcours diversifiés garantissent à chaque projet une précision technique, une intégrité structurelle et une communication claire et organisée.',
     aboutWarrantyTitle: 'La garantie de 3 ans',
     aboutWarranty: 'Nous ne faisons pas que construire et s’enfuir. Grâce à nos normes rigoureuses et à la formation personnalisée de chaque membre de notre équipe, nous avons confiance en la longévité de notre travail. Nous offrons une garantie de 3 ans sur nos projets, vous donnant ainsi la tranquillité d\'esprit d\'un espace extérieur conçu pour durer.',
