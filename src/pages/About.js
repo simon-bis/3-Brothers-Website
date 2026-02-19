@@ -33,10 +33,7 @@ const About = () => {
         {/* Why Choose Section */}
         <article className="about-section full-width">
           <div className="section-inner">
-            <div className="section-image">
-              <img src={owners} alt="3 Brothers team" />
-            </div>
-            <div className="section-text">
+            <div className="section-text centered">
               <h2>{t('aboutWhyTitle')}</h2>
               <p>{t('aboutWhy')}</p>
             </div>
