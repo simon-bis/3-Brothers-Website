@@ -3,6 +3,7 @@ import { Helmet } from 'react-helmet-async';
 import './Home.css';
 import { useLanguage } from '../context/LanguageContext';
 import { translations } from '../translations';
+import { CONFIG } from '../config';
 
 import interlockImg from '../assets/Interlock/interlock_01.webp';
 import landscapingImg from '../assets/Landscaping/landscaping_01.webp';
@@ -132,7 +133,7 @@ const Home = () => {
       <Helmet>
         <title>{t('homeTitle')}</title>
         <meta name="description" content={t('metaDescription')} />
-        <link rel="canonical" href="https://www.3brothersottawalandscaping.ca/" />
+        <link rel="canonical" href={CONFIG.urls.home} />
       </Helmet>
       <section
         className="hero"

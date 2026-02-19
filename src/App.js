@@ -13,11 +13,12 @@ import About from './pages/About';
 import { LanguageProvider } from './context/LanguageContext';
 import './App.css';
 import Reviews from './components/Reviews';
+import { CONFIG } from './config';
 
 import ReactGA from "react-ga4";
 
 // Initialize with your Measurement ID
-ReactGA.initialize("G-QMQ9T0FGM5");
+ReactGA.initialize(CONFIG.ga.measurementId);
 
 // Send an initial pageview
 ReactGA.send({ hitType: "pageview", page: window.location.pathname });

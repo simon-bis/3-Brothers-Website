@@ -4,6 +4,7 @@ import './About.css';
 import { Helmet } from 'react-helmet-async';
 import { useLanguage } from '../context/LanguageContext';
 import { translations } from '../translations';
+import { CONFIG } from '../config';
 import heroImg from '../assets/Landscaping/landscaping_01.webp';
 // import owners from '../assets/About_us/owners.png';
 import equipment from '../assets/About_us/bobcat.png';
@@ -13,7 +14,7 @@ import clear_stone from '../assets/About_us/clear_stone.png';
 const About = () => {
   const { language } = useLanguage();
   const t = (key) => translations[language]?.[key] || key;
-  const canonical = 'https://www.3brothersottawalandscaping.ca/about-us';
+  const canonical = CONFIG.urls.about;
 
   return (
     <div className="about-page">

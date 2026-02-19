@@ -3,6 +3,7 @@ import { Helmet } from 'react-helmet-async';
 import './Contact.css';
 import { useLanguage } from '../context/LanguageContext';
 import { translations } from '../translations';
+import { CONFIG } from '../config';
 import interlockImg from '../assets/Interlock/interlock_01.webp';
 import landscapingImg from '../assets/Landscaping/landscaping_01.webp';
 import decksImg from '../assets/Decks_&_Railings/deck_01.webp';
@@ -17,7 +18,7 @@ import pressureImg from '../assets/Pressure_Washing_&_Resand/pressure_01.webp';
 const Contact = () => {
   const { language } = useLanguage();
   const t = (key) => translations[language]?.[key] || key;
-  const FORM_ENDPOINT = 'https://formspree.io/f/mykyqjbe';
+  const FORM_ENDPOINT = CONFIG.form.endpoint;
   
   const [form, setForm] = useState({
     name: '',
@@ -88,7 +89,7 @@ const Contact = () => {
       <Helmet>
         <title>{t('contactTitle')}</title>
         <meta name="description" content={t('contactPageMeta')} />
-        <link rel="canonical" href="https://www.3brothersottawalandscaping.ca/contact-us" />
+        <link rel="canonical" href={CONFIG.urls.contact} />
       </Helmet>
       <div className="contact-container">
         {/* Left Section: Contact Info */}
@@ -108,7 +109,7 @@ const Contact = () => {
             <span className="info-icon">📞</span>
             <div>
               <h4>{t('phone')}</h4>
-              <p><a href="tel:+16137983968">(613) 798-3968</a></p>
+              <p><a href={`tel:${CONFIG.contact.phone}`}>{CONFIG.contact.phoneDisplay}</a></p>
             </div>
           </div>
 
@@ -116,7 +117,7 @@ const Contact = () => {
             <span className="info-icon">✉️</span>
             <div>
               <h4>{t('email')}</h4>
-              <p><a href="mailto:3brothersottawalandscaping@gmail.com">3brothersottawalandscaping@gmail.com</a></p>
+              <p><a href={`mailto:${CONFIG.contact.email}`}>{CONFIG.contact.email}</a></p>
             </div>
           </div>
         </section>
