@@ -240,7 +240,7 @@ export const translations = {
     faqPaymentTitle: 'What payment methods do you accept?',
     faqPaymentAnswer: 'We accept cash, check, and e-transfer. Other payment methods may be available upon request but will incure additional fees.',
     faqInsuranceTitle: 'Are you licensed and insured?',
-    faqInsuranceAnswer: 'Yes, we are fully licensed, insured, and bonded. Your property and investment are protected throughout the entire project.',
+    faqInsuranceAnswer: 'Yes, we are fully licensed and insured. Your property and investment are protected throughout the entire project.',
 
     reviewsTitle: "What Our Clients Say",
     readMoreReviews: "Read more on Google",
@@ -389,8 +389,8 @@ export const translations = {
     decksHero: 'Construction experte de terrasses et installation de garde-corps et rampes pour les résidences de la région d\'Ottawa.',
     decksMaterialsTitle: 'Matériaux et options de conception',
     decksMaterialsDeckingLabel: 'Terrasses',
-    decksMaterialsDeckingDesc: 'Choisissez parmi PVC, composite ou bois — y compris cèdre et bois traité sous pression — pour une tenue à long terme et un style intemporel.',
-    decksMaterialsRailingsLabel: 'garde-corps et rampes',
+    decksMaterialsDeckingDesc: 'Choisissez parmi PVC, composite ou bois y compris cèdre et bois traité sous pression pour une tenue à long terme et un style intemporel.',
+    decksMaterialsRailingsLabel: 'Garde-corps et rampes',
     decksMaterialsRailingsDesc: 'Nos garde-corps et rampes sont construits sur mesure, en métal avec barreaux ou en verre. Ils ajoutent sécurité et élégance à votre terrasse tout en conservant l\'espace ouvert et raffiné.',
     decksGallery: 'Galerie',
     decksIntro: 'Transformez votre espace extérieur par la construction d’une terrasse et l\'installation de garde-corps et rampes à l’aide d’experts de la région d\'Ottawa. Que vous souhaitiez un coin détente ou un espace de réception élégant, nous créons des terrasses durables et de bon goût.',
@@ -469,6 +469,8 @@ export const translations = {
     aboutPromiseLocal: 'Entreprise locale : Nous sommes vos voisins. Nous sommes fiers de voir notre travail dans la région d\'Ottawa.',
     aboutPromiseSatisfaction: 'Votre satisfaction à 100% nous tient à coeur : Notre travail ne se termine qu’au moment où vous êtes enchanté de votre nouvel espace extérieur.',
     
+    //French text bellow not reviwed
+
     // Section CTA
     readyToStart: 'Prêt à transformer votre espace extérieur ?',
     freeEstimate: 'Devis gratuits',
@@ -510,8 +512,8 @@ export const translations = {
     faqPaymentTitle: 'Quelles méthodes de paiement acceptez-vous?',
     faqPaymentAnswer: 'Nous acceptons l\'argent comptant, les chèques et les virements e-Transfer. D\'autres méthodes de paiement peuvent être disponibles sur demande, mais elles peuvent entraîner des frais supplémentaires.',
     faqInsuranceTitle: 'Êtes-vous autorisé et assuré?',
-    faqInsuranceAnswer: 'Oui, nous sommes pleinement autorisés, assurés et cautionnés. Votre propriété et votre investissement sont protégés tout au long du projet.',
-    // French text not rewiewd
+    faqInsuranceAnswer: 'Oui, nous sommes pleinement autorisés et assurés. Votre propriété et votre investissement sont protégés tout au long du projet.',
+  
     reviewsTitle: "Ce que disent nos clients",
       readMoreReviews: "Lire plus sur Google",
       reviews: [
