@@ -62,7 +62,7 @@ const About = () => {
               <p>{t('aboutWarranty')}</p>
             </div>
             <div className="section-image">
-              <img src={warranty} alt="Warranty guarantee" />
+              <img src={warranty} alt="3 Brothers Ottawa Landscaping warranty guarantee badge" />
             </div>
           </div>
         </article>
@@ -71,7 +71,7 @@ const About = () => {
         <article className="about-section full-width">
           <div className="section-inner">
             <div className="section-image">
-              <img src={clear_stone} alt="Clear stone advantage" />
+              <img src={clear_stone} alt="Clear stone base advantage for Ottawa patios" />
             </div>
             <div className="section-text">
               <h2>{t('aboutClearStoneTitle')}</h2>
@@ -97,7 +97,7 @@ const About = () => {
               </ul>
             </div>
             <div className="section-image">
-              <img src={equipment} alt="Professional equipment" />
+              <img src={equipment} alt="Professional landscaping equipment used in Ottawa" />
             </div>
           </div>
         </article>
@@ -106,7 +106,7 @@ const About = () => {
         <article className="about-section full-width">
           <div className="section-inner">
             <div className="section-image">
-              <img src={heroImg} alt="Our promise to you" />
+              <img src={heroImg} alt="3 Brothers Ottawa Landscaping promise to customers" />
             </div>
             <div className="section-text">
               <h2>{t('aboutPromiseTitle')}</h2>

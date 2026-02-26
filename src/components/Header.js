@@ -19,7 +19,7 @@ const Header = () => {
   return (
     <header className="header">
       <NavLink to="/" onClick={closeMenu}>
-        <img src={logo} alt="Landscaping Logo" className="logo" />
+        <img src={logo} alt="3 Brothers Ottawa Landscaping logo" className="logo" />
       </NavLink>
 
       {/* Desktop Navbar */}

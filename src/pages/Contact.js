@@ -24,20 +24,65 @@ const Contact = () => {
     name: '',
     email: '',
     phone: '',
-    subject: '',
     message: '',
   });
   
   const [status, setStatus] = useState(null);
+  const [errors, setErrors] = useState({});
 
   const handleChange = (e) => {
     const { name, value } = e.target;
     setForm((f) => ({ ...f, [name]: value }));
+
+    // inline validation with field-specific errors
+    setErrors((prev) => {
+      const newErr = { ...prev };
+      
+      if (name === 'name') {
+        if (!value.trim()) {
+          newErr.name = t('nameRequired');
+        } else {
+          delete newErr.name;
+        }
+      } else if (name === 'email') {
+        if (!value.trim()) {
+          newErr.email = t('emailRequired');
+        } else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(value)) {
+          newErr.email = t('emailInvalid');
+        } else {
+          delete newErr.email;
+        }
+      } else if (name === 'message') {
+        if (!value.trim()) {
+          newErr.message = t('messageRequired');
+        } else {
+          delete newErr.message;
+        }
+      }
+      
+      return newErr;
+    });
   };
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    if (!form.name || !form.email || !form.message) {
+    
+    // validate all fields on submit
+    const newErrors = {};
+    if (!form.name || !form.name.trim()) {
+      newErrors.name = t('nameRequired');
+    }
+    if (!form.email || !form.email.trim()) {
+      newErrors.email = t('emailRequired');
+    } else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(form.email)) {
+      newErrors.email = t('emailInvalid');
+    }
+    if (!form.message || !form.message.trim()) {
+      newErrors.message = t('messageRequired');
+    }
+    
+    if (Object.keys(newErrors).length > 0) {
+      setErrors(newErrors);
       setStatus({ type: 'error', message: t('fillRequired') });
       return;
     }
@@ -52,7 +97,6 @@ const Contact = () => {
           name: form.name,
           email: form.email,
           phone: form.phone,
-          subject: form.subject,
           message: form.message,
         }),
       });
@@ -60,7 +104,12 @@ const Contact = () => {
       const data = await res.json().catch(() => ({}));
       
       if (res.ok) {
-        setStatus({ type: 'success', message: t('messageSent') });
+        let successMsg = t('messageSent');
+        if (form.phone) {
+          const template = t('callWithin24');
+          successMsg += ' ' + template.replace('{phone}', form.phone);
+        }
+        setStatus({ type: 'success', message: successMsg });
         setForm({ name: '', email: '', phone: '', subject: '', message: '' });
 
         // --- NEW: Meta Pixel / CRM Conversion Tracking ---
@@ -139,64 +188,55 @@ const Contact = () => {
 
         {/* Right Section: Contact Form */}
         <section className="contact-form-section">
+          <p className="response-note">{t('respond24')}</p>
           <form className="contact-form" onSubmit={handleSubmit}>
             <div className="form-row">
               <div className="field-group">
+                <label htmlFor="name">{t('yourName')}</label>
                 <input
                   type="text"
                   id="name"
                   name="name"
                   value={form.name}
                   onChange={handleChange}
-                  placeholder={t('yourName')}
-                  required
                 />
+                {errors.name && <p className="error-text">{errors.name}</p>}
               </div>
               <div className="field-group">
+                <label htmlFor="email">{t('yourEmail')}</label>
                 <input
                   type="email"
                   id="email"
                   name="email"
                   value={form.email}
                   onChange={handleChange}
-                  placeholder={t('yourEmail')}
-                  required
                 />
+                {errors.email && <p className="error-text">{errors.email}</p>}
               </div>
             </div>
 
             <div className="field-group">
+              <label htmlFor="phone">{t('phoneNumber')} ({t('optional')})</label>
               <input
                 type="tel"
                 id="phone"
                 name="phone"
                 value={form.phone}
                 onChange={handleChange}
-                placeholder={t('phoneNumber')}
               />
             </div>
 
-            <div className="field-group">
-              <input
-                type="text"
-                id="subject"
-                name="subject"
-                value={form.subject}
-                onChange={handleChange}
-                placeholder={t('messageSubject')}
-              />
-            </div>
 
             <div className="field-group">
+              <label htmlFor="message">{t('yourMessage')}</label>
               <textarea
                 id="message"
                 name="message"
                 rows="6"
                 value={form.message}
                 onChange={handleChange}
-                placeholder={t('yourMessage')}
-                required
               />
+              {errors.message && <p className="error-text">{errors.message}</p>}
             </div>
 
             {/* Trust & Privacy Notice */}

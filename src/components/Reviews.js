@@ -20,7 +20,7 @@ function Reviews() {
           rel="noreferrer"
           className="logo-link-wrapper"
         >
-          <img src={googleReviewImg} alt="Google Review" className="section-google-logo" />
+          <img src={googleReviewImg} alt="Google review badge for 3 Brothers Ottawa Landscaping" className="section-google-logo" />
         </a>
 
         <h2 className="reviews-title">{t('reviewsTitle')}</h2>

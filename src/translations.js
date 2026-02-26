@@ -55,13 +55,20 @@ export const translations = {
     sendMessage: 'Send us a message',
     yourName: 'Your Name',
     yourEmail: 'Your Email',
-    phoneNumber: 'Phone Number (Optional)',
+    phoneNumber: 'Phone Number',
+    optional: 'optional',
+    respond24: 'We respond in 24 hours',
+    callWithin24: 'We\'ll call you at {phone} within 24 hours',
     messageSubject: 'Message Subject',
     yourMessage: 'Your Message',
     sendBtn: 'Send Message',
     sendingMessage: 'Sending message...',
     messageSent: 'Message sent — we will get back to you shortly.',
     fillRequired: 'Please fill in Name, Email and Message.',
+    nameRequired: 'Your name is required',
+    emailRequired: 'Email address is required',
+    emailInvalid: 'Please enter a valid email address',
+    messageRequired: 'Please tell us about your project',
     networkError: 'Network error. Please try again later.',
     sendingFailed: 'Sending failed. Please try again later.',
     
@@ -70,7 +77,7 @@ export const translations = {
     projectsPageTitle: 'Project Gallery - See Our Work | 3 Brothers Ottawa Landscaping',
     projectsMetaDescription: 'Browse our landscaping project portfolio including interlock patios, decks, fences, retaining walls, and more in the Ottawa region. View before & after photos.',
     projectsGalleryTitle: 'Our Project Gallery',
-    projectPhotoViewAlt: 'project photo - view enlarged',
+    projectPhotoViewAlt: 'project photo - view enlarged - 3 Brothers Ottawa Landscaping',
 
     // Interlock page
     interlockTitle: 'Interlock Paving in Ottawa',
@@ -105,14 +112,14 @@ export const translations = {
     patternRegularRandom: 'Regular Random Interlock',
 
     // Interlock alt + details
-    patternRunningBondAlt: 'Running Bond pattern',
-    patternBasketweaveAlt: 'Basketweave pattern',
-    patternHerringboneAlt: 'Herringbone pattern',
-    patternRegularRandomAlt: 'Regular Random Interlock pattern',
+    patternRunningBondAlt: 'Interlock paving pattern – Running Bond',
+    patternBasketweaveAlt: 'Interlock paving pattern – Basketweave',
+    patternHerringboneAlt: 'Interlock paving pattern – Herringbone',
+    patternRegularRandomAlt: 'Interlock paving pattern – Regular Random',
     interlockEstimateDetail: 'For a precise quote, we’ll need to visit your site, assess the area, and take measurements. Don’t worry if the estimate exceeds your budget—our expert designers can create a customized plan to fit your financial needs.',
-    interlockGalleryImg1Alt: 'Professional interlock paving installation in Ottawa',
-    interlockGalleryImg2Alt: 'Custom interlock walkway project by 3 Brothers',
-    interlockGalleryImg3Alt: 'Relevel and repair service for interlock pavers in Ottawa',
+    interlockGalleryImg1Alt: 'Professional interlock paving installation in Ottawa by 3 Brothers Landscaping',
+    interlockGalleryImg2Alt: 'Custom interlock walkway project in Ottawa by 3 Brothers Landscaping',
+    interlockGalleryImg3Alt: 'Interlock pad relevel and repair service in Ottawa',
 
     // Shared UI
     requestEstimate: 'Request a free estimate',
@@ -127,9 +134,9 @@ export const translations = {
     decksMaterialsRailingsDesc: 'Our railings come in metal with pickets, glass, or custom designs, adding safety and style to your deck while keeping your space open and elegant.',
     decksGallery: 'Gallery',
     decksIntro: 'Transform your outdoor space with expert deck building and railing installation in Ottawa. Whether you want a relaxing backyard retreat or a stylish entertainment area, we create decks and railings that combine durability, beauty, and low maintenance.',
-    decksImgAlt1: 'Custom deck construction in Ottawa',
-    decksImgAlt2: 'Decking and metal railings installation example',
-    decksImgAlt3: 'Professional composite deck with railings',
+    decksImgAlt1: 'Custom deck construction in Ottawa by 3 Brothers Landscaping',
+    decksImgAlt2: 'Decking and metal railings installation example in Ottawa',
+    decksImgAlt3: 'Professional composite deck with railings in Ottawa',
 
     // Landscaping Page
     landscapingTitle: 'Landscaping Services in Ottawa',
@@ -147,9 +154,9 @@ export const translations = {
     landscapingIrrigationLabel: 'Irrigation Systems',
     landscapingIrrigationDesc: 'Efficient watering solutions for healthy plants.',
     landscapingGallery: 'Gallery',
-    landscapingImgAlt1: 'Beautiful landscaping project in Ottawa',
-    landscapingImgAlt2: 'Custom garden bed design and installation',
-    landscapingImgAlt3: 'Professional sod installation for lush lawns',
+    landscapingImgAlt1: 'Beautiful landscaping project in Ottawa by 3 Brothers Landscaping',
+    landscapingImgAlt2: 'Custom garden bed design and installation in Ottawa',
+    landscapingImgAlt3: 'Professional sod installation for lush lawns in Ottawa',
 
     // Fences Page
     fencesTitle: 'Fences installation in Ottawa',
@@ -319,13 +326,20 @@ export const translations = {
     sendMessage: 'Envoyez-nous un message',
     yourName: 'Votre nom',
     yourEmail: 'Votre courriel',
-    phoneNumber: 'Numéro de téléphone (Facultatif)',
+    phoneNumber: 'Numéro de téléphone',
+    optional: 'facultatif',
+    respond24: 'Nous répondons dans les 24 heures',
+    callWithin24: 'Nous vous appellerons au {phone} dans les 24 heures',
     messageSubject: 'Sujet du message',
     yourMessage: 'Votre message',
     sendBtn: 'Envoyer le message',
     sendingMessage: 'Envoi du message...',
     messageSent: 'Message envoyé — nous vous contacterons sous peu.',
     fillRequired: 'Veuillez remplir Nom, Courriel et Message.',
+    nameRequired: 'Votre nom est requis',
+    emailRequired: 'L\'adresse courriel est requise',
+    emailInvalid: 'Veuillez entrer une adresse courriel valide',
+    messageRequired: 'Veuillez nous décrire votre projet',
     networkError: 'Erreur réseau. Veuillez réessayer plus tard.',
     sendingFailed: 'L\'envoi a échoué. Veuillez réessayer plus tard.',
    
@@ -334,7 +348,7 @@ export const translations = {
     projectsPageTitle: 'Éventail de projets | Nos travaux | 3 Brothers Ottawa Landscaping',
     projectsMetaDescription: 'Consultez notre éventail de projets de paysagisme comprenant des patios en pavés unis, terrasses, clôtures, murs de soutènement, et bien plus. Le tout dans la région d\'Ottawa. Examinez les photos avant et après.',
     projectsGalleryTitle: 'Notre éventail de projets',
-    projectPhotoViewAlt: 'Photo du projet - vue agrandie',
+    projectPhotoViewAlt: 'Photo du projet - vue agrandie - 3 Brothers Ottawa Landscaping',
 
 
     // Interlock page
@@ -371,14 +385,14 @@ export const translations = {
 
 
     // Interlock alt + details (FR)
-    patternRunningBondAlt: 'Motif rang décalé',
-    patternBasketweaveAlt: 'Motif tressage',
-    patternHerringboneAlt: 'Motif chevron',
-    patternRegularRandomAlt: 'Motif pavage aléatoire régulier',
+    patternRunningBondAlt: 'Motif de pavage interlock rang décalé',
+    patternBasketweaveAlt: 'Motif de pavage interlock tressage',
+    patternHerringboneAlt: 'Motif de pavage interlock chevron',
+    patternRegularRandomAlt: 'Motif de pavage interlock aléatoire régulier',
     interlockEstimateDetail: 'Pour un devis précis, nous devrons visiter le site où vous souhaitez les travaux, évaluer la zone et prendre des mesures. Ne vous inquiétez pas si l\'estimation dépasse votre budget — nos concepteurs experts peuvent créer un plan personnalisé adapté à vos besoins financiers.',
-    interlockGalleryImg1Alt: 'Installation professionnelle de pavé dans la région d\'Ottawa',
-    interlockGalleryImg2Alt: 'Projet de chemin en pavé personnalisé par 3 Brothers',
-    interlockGalleryImg3Alt: 'Service de remise à niveau et réparation de pavés dans la région d\'Ottawa',
+    interlockGalleryImg1Alt: 'Installation professionnelle de pavé interlock dans la région d\'Ottawa par 3 Brothers Landscaping',
+    interlockGalleryImg2Alt: 'Projet de chemin en pavé interlock personnalisé dans la région d\'Ottawa par 3 Brothers Landscaping',
+    interlockGalleryImg3Alt: 'Service de remise à niveau et réparation de pavés interlock dans la région d\'Ottawa',
 
 
     // Shared UI
@@ -394,9 +408,9 @@ export const translations = {
     decksMaterialsRailingsDesc: 'Nos garde-corps et rampes sont construits sur mesure, en métal avec barreaux ou en verre. Ils ajoutent sécurité et élégance à votre terrasse tout en conservant l\'espace ouvert et raffiné.',
     decksGallery: 'Galerie',
     decksIntro: 'Transformez votre espace extérieur par la construction d’une terrasse et l\'installation de garde-corps et rampes à l’aide d’experts de la région d\'Ottawa. Que vous souhaitiez un coin détente ou un espace de réception élégant, nous créons des terrasses durables et de bon goût.',
-    decksImgAlt1: 'Construction de terrasse sur mesure dans la région d\'Ottawa',
-    decksImgAlt2: 'Exemple d\'installation de terrasse, garde-corps et rampes métalliques',
-    decksImgAlt3: 'Terrasse professionnelle en composite avec garde-corps et/ou rampes',
+    decksImgAlt1: 'Construction de terrasse sur mesure dans la région d\'Ottawa par 3 Brothers Ottawa Landscaping',
+    decksImgAlt2: 'Exemple d\'installation de terrasse et garde-corps métalliques dans la région d\'Ottawa',
+    decksImgAlt3: 'Terrasse professionnelle en composite avec garde-corps dans la région d\'Ottawa',
 
 
     // Landscaping Page
@@ -415,9 +429,9 @@ export const translations = {
     landscapingIrrigationLabel: 'Systèmes d\'irrigation',
     landscapingIrrigationDesc: 'Solutions d\'arrosage efficaces pour des plantes saines.',
     landscapingGallery: 'Galerie',
-    landscapingImgAlt1: 'Superbe projet d\'aménagement paysager dans la région d\'Ottawa',
-    landscapingImgAlt2: 'Conception sur mesure et aménagement de plates-bandes adaptées à vos goûts et vos besoins',
-    landscapingImgAlt3: 'Pose professionnelle de gazon pour des pelouses luxuriantes',
+    landscapingImgAlt1: 'Superbe projet d\'aménagement paysager dans la région d\'Ottawa par 3 Brothers Ottawa Landscaping',
+    landscapingImgAlt2: 'Conception sur mesure et aménagement de plates-bandes dans la région d\'Ottawa',
+    landscapingImgAlt3: 'Pose professionnelle de gazon pour des pelouses luxuriantes dans la région d\'Ottawa',
 
 
     // Fences Page

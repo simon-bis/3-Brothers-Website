@@ -175,6 +175,19 @@ html, body {
   color: #a8e650;
 }
 
+.error-text {
+  color: #ef5350;
+  font-size: 0.85rem;
+  margin-top: -12px;
+  margin-bottom: 12px;
+}
+
+.response-note {
+  color: #ddd;
+  font-size: 0.9rem;
+  margin-bottom: 16px;
+}
+
 .form-status.error {
   background: rgba(244, 67, 54, 0.2);
   color: #ef5350;
