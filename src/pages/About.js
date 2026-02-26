@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import './About.css';
 import { Helmet } from 'react-helmet-async';
 import { useLanguage } from '../context/LanguageContext';
