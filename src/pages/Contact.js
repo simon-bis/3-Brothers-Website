@@ -72,8 +72,10 @@ const Contact = () => {
             currency: 'CAD'
           });
         }
-        // --------------------------------------------------
-
+        window.dataLayer = window.dataLayer || [];
+        window.dataLayer.push({
+         event: 'form_submission_success'
+        });
       } else {
         setStatus({ type: 'error', message: data.error || t('sendingFailed') });
       }
