@@ -1,10 +1,37 @@
+# robots.txt for 3 Brothers Ottawa Landscaping
+# Generated to improve SEO and reflect current site structure
+
 User-agent: *
+# allow everything except explicitly forbidden paths
 Allow: /
 
-# Disallow private or admin pages if any
+# directories that should never be indexed
 Disallow: /admin/
 Disallow: /private/
 Disallow: /temp/
+
+# host directive (optional) specifies preferred domain
+Host: www.3brothersottawalandscaping.ca
+
+
+# Allow Google and Bing to crawl
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+# Disallow private pages
+Disallow: /admin/
+Disallow: /private/
+Disallow: /temp/
+
+# Disallow search and duplicate pages
+Disallow: /*?search=
+Disallow: /*?filter=
+
+# Crawl delay to prevent server overload
+Crawl-delay: 1
 
 # Sitemap location
 Sitemap: https://www.3brothersottawalandscaping.ca/sitemap.xml

@@ -118,7 +118,7 @@ export const translations = {
     requestEstimate: 'Request a free estimate',
     
     // Decks Page
-    decksTitle: 'Decking & Railings',
+    decksTitle: 'Decking & Railings installation in Ottawa',
     decksHero: 'Expert deck building and railing installation for homes in Ottawa.',
     decksMaterialsTitle: 'Materials & Design Options',
     decksMaterialsDeckingLabel: 'Decking',
@@ -132,7 +132,7 @@ export const translations = {
     decksImgAlt3: 'Professional composite deck with railings',
 
     // Landscaping Page
-    landscapingTitle: 'Landscaping Services',
+    landscapingTitle: 'Landscaping Services in Ottawa',
     landscapingHero: 'Beautiful gardens, lush lawns, and outdoor transformations.',
     landscapingServicesTitle: 'Our Landscaping Services',
     landscapingListIntro: 'We offer a wide range of landscaping services to enhance your property:',
@@ -152,7 +152,7 @@ export const translations = {
     landscapingImgAlt3: 'Professional sod installation for lush lawns',
 
     // Fences Page
-    fencesTitle: 'Fences',
+    fencesTitle: 'Fences installation in Ottawa',
     fencesHero: 'We install and repair vinyl, wood, and metal fences across Ottawa, providing durable, stylish, and low-maintenance solutions for any property.',
     fencesTypesTitle: 'Fence Types',
     fencesPVCLabel: 'PVC Fences',
@@ -385,7 +385,7 @@ export const translations = {
     requestEstimate: 'Demandez un devis gratuit',
    
     // Decks Page
-    decksTitle: 'Terrasses garde-corps et rampes',
+    decksTitle: 'Terrasses garde-corps et rampes dans la région d\'Ottawa',
     decksHero: 'Construction experte de terrasses et installation de garde-corps et rampes pour les résidences de la région d\'Ottawa.',
     decksMaterialsTitle: 'Matériaux et options de conception',
     decksMaterialsDeckingLabel: 'Terrasses',
@@ -400,7 +400,7 @@ export const translations = {
 
 
     // Landscaping Page
-    landscapingTitle: 'Aménagement paysager',
+    landscapingTitle: 'Aménagement paysager dans la région d\'Ottawa',
     landscapingHero: 'Jardins splendides, pelouses luxuriantes et transformations extérieures.',
     landscapingServicesTitle: 'Nos services d\'aménagement paysager',
     landscapingListIntro: 'Nous proposons une vaste gamme de services d\'aménagement pour améliorer votre propriété :',
@@ -421,7 +421,7 @@ export const translations = {
 
 
     // Fences Page
-    fencesTitle: 'Clôtures',
+    fencesTitle: 'Installation de clôtures dans la région d\'Ottawa',
     fencesHero: 'Nous installons et réparons des clôtures en vinyle, bois et métal dans la région d\'Ottawa, en offrant des solutions de longue durée, qui demandent peu d\'entretien et qui ont du style.',
     fencesTypesTitle: 'Types de clôtures',
     fencesPVCLabel: 'Clôtures PVC',
