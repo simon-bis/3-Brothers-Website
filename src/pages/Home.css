@@ -83,6 +83,8 @@
   width: 100%; /* Ensure it stays within parent */
   overflow: hidden; /* Clip anything that pokes out */
   box-sizing: border-box;
+  padding-top: 25px;
+  padding-bottom: 20px;
 }
 
 .services-list {

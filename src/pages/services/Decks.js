@@ -4,6 +4,9 @@ import './Services.css';
 import { Helmet } from 'react-helmet-async';
 import { useLanguage } from '../../context/LanguageContext';
 import { translations } from '../../translations';
+import TrustSignals from '../../components/TrustSignals';
+import FAQSection from '../../components/FAQSection';
+import CTASection from '../../components/CTASection';
 import deck01 from '../../assets/Decks_&_Railings/deck_01.webp';
 import deck03 from '../../assets/Decks_&_Railings/deck_03.webp';
 import deck04 from '../../assets/Decks_&_Railings/deck_04.webp';
@@ -60,7 +63,21 @@ const Decks = () => {
       <Helmet>
         <title>{t('decksTitle')} | 3 Brothers Landscaping</title>
         <meta name="description" content={t('decksHero')} />
+        <meta name="keywords" content="custom decks Ottawa, deck builder, railings, wood decks, PVC decks, outdoor decks" />
         <link rel="canonical" href={canonical} />
+        
+        {/* Open Graph Tags */}
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content={canonical} />
+        <meta property="og:title" content={t('decksTitle')} />
+        <meta property="og:description" content={t('decksHero')} />
+        <meta property="og:site_name" content="3 Brothers Ottawa Landscaping" />
+
+        {/* Twitter Card */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content={t('decksTitle')} />
+        <meta name="twitter:description" content={t('decksHero')} />
+
         <script type="application/ld+json">{JSON.stringify(jsonLd)}</script>
         <script type="application/ld+json">{JSON.stringify(breadcrumbLd)}</script>
       </Helmet>
@@ -91,6 +108,18 @@ const Decks = () => {
 
         <div className="cta"><a href="/contact-us" className="btn">{t('requestEstimate')}</a></div>
       </section>
+
+      {/* Trust Signals */}
+      <TrustSignals />
+
+      {/* FAQ Section */}
+      <FAQSection />
+
+      {/* CTA Section */}
+      <CTASection 
+        title={t('readyToStart')}
+        showTrustBadges={true}
+      />
     </div>
   );
 };

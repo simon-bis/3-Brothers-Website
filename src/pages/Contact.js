@@ -89,7 +89,20 @@ const Contact = () => {
       <Helmet>
         <title>{t('contactTitle')}</title>
         <meta name="description" content={t('contactPageMeta')} />
+        <meta name="keywords" content="contact 3 Brothers Landscaping, get a quote, landscaping estimate, free consultation, Ottawa" />
         <link rel="canonical" href={CONFIG.urls.contact} />
+        
+        {/* Open Graph Tags */}
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content={CONFIG.urls.contact} />
+        <meta property="og:title" content={t('contactTitle')} />
+        <meta property="og:description" content={t('contactPageMeta')} />
+        <meta property="og:site_name" content="3 Brothers Ottawa Landscaping" />
+
+        {/* Twitter Card */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content={t('contactTitle')} />
+        <meta name="twitter:description" content={t('contactPageMeta')} />
       </Helmet>
       <div className="contact-container">
         {/* Left Section: Contact Info */}
@@ -182,6 +195,13 @@ const Contact = () => {
                 placeholder={t('yourMessage')}
                 required
               />
+            </div>
+
+            {/* Trust & Privacy Notice */}
+            <div className="form-notice">
+              <p style={{ fontSize: '0.85rem', color: '#666', marginBottom: '1rem' }}>
+                ✓ <strong>Free, no-obligation quote</strong> | Your information is secure and will never be shared
+              </p>
             </div>
 
             <div className="form-actions">

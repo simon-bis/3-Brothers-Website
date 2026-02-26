@@ -35,8 +35,12 @@
   gap: 20px;
   margin-bottom: 20px;
 }
-.cta { margin-top: 1.5rem; }
-.btn { background: #8ED433; padding: 10px 16px; color: #191919; text-decoration: none; border-radius: 8px; font-weight: 700; }
+.service-content {
+  padding: 20px 0;
+  padding-bottom: 3rem;
+}
+.cta { margin-top: 2rem; }
+.btn { background: #8ED433; padding: 14px 24px; color: #191919; text-decoration: none; border-radius: 8px; font-weight: 700; }
 
 .calculator {
   background: #333;

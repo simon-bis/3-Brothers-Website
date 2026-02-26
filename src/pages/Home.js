@@ -4,6 +4,10 @@ import './Home.css';
 import { useLanguage } from '../context/LanguageContext';
 import { translations } from '../translations';
 import { CONFIG } from '../config';
+import { generateLocalBusinessSchema, generateBreadcrumbSchema } from '../utils/seoHelpers';
+import TrustSignals from '../components/TrustSignals';
+import FAQSection from '../components/FAQSection';
+import CTASection from '../components/CTASection';
 
 import interlockImg from '../assets/Interlock/interlock_01.webp';
 import landscapingImg from '../assets/Landscaping/landscaping_01.webp';
@@ -128,12 +132,36 @@ const Home = () => {
   const { language } = useLanguage();
   const t = (key) => translations[language]?.[key] || key;
 
+  const breadcrumbSchema = generateBreadcrumbSchema([
+    { name: 'Home', url: CONFIG.urls.home }
+  ]);
+
   return (
     <div className="home">
       <Helmet>
         <title>{t('homeTitle')}</title>
         <meta name="description" content={t('metaDescription')} />
+        <meta name="keywords" content="landscaping Ottawa, interlock patio, decks, fences, landscaping services, retaining walls, stamped concrete" />
+        <meta name="robots" content="index, follow" />
         <link rel="canonical" href={CONFIG.urls.home} />
+        
+        {/* Open Graph Tags */}
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content={CONFIG.urls.home} />
+        <meta property="og:title" content={t('homeTitle')} />
+        <meta property="og:description" content={t('metaDescription')} />
+        <meta property="og:image" content="https://www.3brothersottawalandscaping.ca/og-image.png" />
+        <meta property="og:site_name" content="3 Brothers Ottawa Landscaping" />
+
+        {/* Twitter Card */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content={t('homeTitle')} />
+        <meta name="twitter:description" content={t('metaDescription')} />
+        <meta name="twitter:image" content="https://www.3brothersottawalandscaping.ca/og-image.png" />
+
+        {/* Structured Data */}
+        <script type="application/ld+json">{JSON.stringify(generateLocalBusinessSchema())}</script>
+        <script type="application/ld+json">{JSON.stringify(breadcrumbSchema)}</script>
       </Helmet>
       <section
         className="hero"
@@ -167,6 +195,19 @@ const Home = () => {
           </div>
         </div>
       </section>
+
+      {/* Trust Signals */}
+      <TrustSignals />
+
+      {/* FAQ Section */}
+      <FAQSection />
+
+      {/* CTA Section */}
+      <CTASection 
+        title={t('readyToStart')}
+        subtitle={t('projectInMind')}
+        showTrustBadges={true}
+      />
     </div>
   );
 };

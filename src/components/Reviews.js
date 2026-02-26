@@ -41,7 +41,7 @@ function Reviews() {
       
       <div className="google-link">
         <a 
-          href="https://www.google.com/search?q=3+Brothers+Ottawa+Landscaping" 
+          href="https://www.google.com/search?q=3+Brothers+Ottawa+Landscaping#lrd=0xafba29db263e18b9:0x7a5fe23dcdde0ae8,1,,,," 
           target="_blank" 
           rel="noreferrer"
         >

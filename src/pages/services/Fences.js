@@ -3,6 +3,9 @@ import './Services.css';
 import { Helmet } from 'react-helmet-async';
 import { useLanguage } from '../../context/LanguageContext';
 import { translations } from '../../translations';
+import TrustSignals from '../../components/TrustSignals';
+import FAQSection from '../../components/FAQSection';
+import CTASection from '../../components/CTASection';
 
 const Fences = () => {
   const { language } = useLanguage();
@@ -56,7 +59,21 @@ const Fences = () => {
       <Helmet>
         <title>{t('fencesTitle')} | 3 Brothers Landscaping</title>
         <meta name="description" content={t('fencesHero')} />
+        <meta name="keywords" content="fencing Ottawa, fence installation, wood fences, PVC fences, privacy fences, metal fences" />
         <link rel="canonical" href={canonical} />
+        
+        {/* Open Graph Tags */}
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content={canonical} />
+        <meta property="og:title" content={t('fencesTitle')} />
+        <meta property="og:description" content={t('fencesHero')} />
+        <meta property="og:site_name" content="3 Brothers Ottawa Landscaping" />
+
+        {/* Twitter Card */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content={t('fencesTitle')} />
+        <meta name="twitter:description" content={t('fencesHero')} />
+
         <script type="application/ld+json">{JSON.stringify(jsonLd)}</script>
         <script type="application/ld+json">{JSON.stringify(breadcrumbLd)}</script>
       </Helmet>
@@ -77,6 +94,18 @@ const Fences = () => {
 
         <div className="cta"><a href="/contact-us" className="btn">{t('requestEstimate')}</a></div>
       </section>
+
+      {/* Trust Signals */}
+      <TrustSignals />
+
+      {/* FAQ Section */}
+      <FAQSection />
+
+      {/* CTA Section */}
+      <CTASection 
+        title={t('readyToStart')}
+        showTrustBadges={true}
+      />
     </div>
   );
 };

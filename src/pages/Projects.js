@@ -203,7 +203,20 @@ const Projects = () => {
       <Helmet>
         <title>{t('projectsPageTitle')}</title>
         <meta name="description" content={t('projectsMetaDescription')} />
+        <meta name="keywords" content="landscaping projects Ottawa, portfolio, completed projects, before and after, interlock patio, deck, fences" />
         <link rel="canonical" href="https://www.3brothersottawalandscaping.ca/projects" />
+        
+        {/* Open Graph Tags */}
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://www.3brothersottawalandscaping.ca/projects" />
+        <meta property="og:title" content={t('projectsPageTitle')} />
+        <meta property="og:description" content={t('projectsMetaDescription')} />
+        <meta property="og:site_name" content="3 Brothers Ottawa Landscaping" />
+
+        {/* Twitter Card */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content={t('projectsPageTitle')} />
+        <meta name="twitter:description" content={t('projectsMetaDescription')} />
       </Helmet>
       <h1 style={{ textAlign: 'center', color: '#8ED433', marginBottom: '30px', marginTop: '20px' }}>{t('projectsGalleryTitle')}</h1>
       {services.map((s, si) => {

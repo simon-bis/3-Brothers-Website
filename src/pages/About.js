@@ -5,6 +5,7 @@ import { Helmet } from 'react-helmet-async';
 import { useLanguage } from '../context/LanguageContext';
 import { translations } from '../translations';
 import { CONFIG } from '../config';
+import CTASection from '../components/CTASection';
 import heroImg from '../assets/Landscaping/landscaping_01.webp';
 // import owners from '../assets/About_us/owners.png';
 import equipment from '../assets/About_us/bobcat.png';
@@ -21,7 +22,20 @@ const About = () => {
       <Helmet>
         <title>{t('aboutTitle')}</title>
         <meta name="description" content={t('aboutMeta')} />
+        <meta name="keywords" content="3 Brothers Landscaping, about us, experience, warranty, team, Ottawa landscaping company" />
         <link rel="canonical" href={canonical} />
+        
+        {/* Open Graph Tags */}
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content={canonical} />
+        <meta property="og:title" content={t('aboutTitle')} />
+        <meta property="og:description" content={t('aboutMeta')} />
+        <meta property="og:site_name" content="3 Brothers Ottawa Landscaping" />
+
+        {/* Twitter Card */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content={t('aboutTitle')} />
+        <meta name="twitter:description" content={t('aboutMeta')} />
       </Helmet>
 
       <header className="about-hero" style={{ backgroundImage: `url(${heroImg})` }}>
@@ -107,10 +121,12 @@ const About = () => {
           </div>
         </article>
 
-        {/* CTA */}
-        <div className="about-cta">
-          <Link to="/contact-us" className="btn primary">{t('getQuote')}</Link>
-        </div>
+        {/* CTA Section */}
+        <CTASection 
+          title={t('readyToStart')}
+          subtitle={t('connectWithUs')}
+          showTrustBadges={true}
+        />
       </section>
     </div>
   );

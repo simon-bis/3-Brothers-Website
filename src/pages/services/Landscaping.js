@@ -4,6 +4,9 @@ import './Services.css';
 import { Helmet } from 'react-helmet-async';
 import { useLanguage } from '../../context/LanguageContext';
 import { translations } from '../../translations';
+import TrustSignals from '../../components/TrustSignals';
+import FAQSection from '../../components/FAQSection';
+import CTASection from '../../components/CTASection';
 import landscaping01 from '../../assets/Landscaping/landscaping_01.webp';
 import landscaping02 from '../../assets/Landscaping/landscaping_02.webp';
 import landscaping04 from '../../assets/Landscaping/landscaping_04.webp';
@@ -60,7 +63,21 @@ const Landscaping = () => {
       <Helmet>
         <title>{t('landscapingTitle')} | 3 Brothers Landscaping</title>
         <meta name="description" content={t('landscapingHero')} />
+        <meta name="keywords" content="landscaping Ottawa, garden design, sod installation, mulch, tree planting, irrigation" />
         <link rel="canonical" href={canonical} />
+        
+        {/* Open Graph Tags */}
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content={canonical} />
+        <meta property="og:title" content={t('landscapingTitle')} />
+        <meta property="og:description" content={t('landscapingHero')} />
+        <meta property="og:site_name" content="3 Brothers Ottawa Landscaping" />
+
+        {/* Twitter Card */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content={t('landscapingTitle')} />
+        <meta name="twitter:description" content={t('landscapingHero')} />
+
         <script type="application/ld+json">{JSON.stringify(jsonLd)}</script>
         <script type="application/ld+json">{JSON.stringify(breadcrumbLd)}</script>
       </Helmet>
@@ -94,6 +111,18 @@ const Landscaping = () => {
 
         <div className="cta"><a href="/contact-us" className="btn">{t('requestEstimate')}</a></div>
       </section>
+
+      {/* Trust Signals */}
+      <TrustSignals />
+
+      {/* FAQ Section */}
+      <FAQSection />
+
+      {/* CTA Section */}
+      <CTASection 
+        title={t('readyToStart')}
+        showTrustBadges={true}
+      />
     </div>
   );
 };
