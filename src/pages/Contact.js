@@ -15,6 +15,10 @@ import drivewayImg from '../assets/Driveways/driveway_01.webp';
 import fenceImg from '../assets/Fences/fence_01.webp';
 import pressureImg from '../assets/Pressure_Washing_&_Resand/pressure_01.webp';
 
+// fontawesome icons used on contact page
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faMapMarkerAlt, faPhone, faEnvelope } from '@fortawesome/free-solid-svg-icons';
+
 const Contact = () => {
   const { language } = useLanguage();
   const t = (key) => translations[language]?.[key] || key;
@@ -162,7 +166,7 @@ const Contact = () => {
           <p className="intro-text">{t('projectInMind')}</p>
 
           <div className="info-item">
-            <span className="info-icon">📍</span>
+            <FontAwesomeIcon icon={faMapMarkerAlt} className="contact-icon" />
             <div>
               <h4>{t('location')}</h4>
               <p>{t('ottawa')}</p>
@@ -170,7 +174,7 @@ const Contact = () => {
           </div>
 
           <div className="info-item">
-            <span className="info-icon">📞</span>
+            <FontAwesomeIcon icon={faPhone} className="contact-icon" />
             <div>
               <h4>{t('phone')}</h4>
               <p><a href={`tel:${CONFIG.contact.phone}`}>{CONFIG.contact.phoneDisplay}</a></p>
@@ -178,7 +182,7 @@ const Contact = () => {
           </div>
 
           <div className="info-item">
-            <span className="info-icon">✉️</span>
+            <FontAwesomeIcon icon={faEnvelope} className="contact-icon" />
             <div>
               <h4>{t('email')}</h4>
               <p><a href={`mailto:${CONFIG.contact.email}`}>{CONFIG.contact.email}</a></p>
@@ -241,9 +245,10 @@ const Contact = () => {
 
             {/* Trust & Privacy Notice */}
             <div className="form-notice">
-              <p style={{ fontSize: '0.85rem', color: '#666', marginBottom: '1rem' }}>
-                ✓ <strong>Free, no-obligation quote</strong> | Your information is secure and will never be shared
-              </p>
+              <p
+                style={{ fontSize: '0.85rem', color: '#666', marginBottom: '1rem' }}
+                dangerouslySetInnerHTML={{ __html: t('contactNotice') }}
+              />
             </div>
 
             <div className="form-actions">

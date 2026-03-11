@@ -66,6 +66,13 @@ html, body {
   min-width: 32px;
 }
 
+/* use same green icon style as footer */
+.contact-icon {
+  color: #8ED433;
+  min-width: 20px;
+  text-align: center;
+}
+
 .info-item h4 {
   color: #8ED433;
   font-size: 0.95rem;

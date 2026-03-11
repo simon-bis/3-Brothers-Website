@@ -42,7 +42,7 @@ const Header = () => {
       <div className="header-right">
         <div className="language-toggle">
           <button className="lang-btn" onClick={toggleLanguage}>
-            {language === 'en' ? 'Eng' : 'Fr'}
+            {language === 'en' ? 'Fr' : 'Eng'}
           </button>
         </div>
 
