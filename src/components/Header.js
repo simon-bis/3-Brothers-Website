@@ -54,8 +54,8 @@ const Header = () => {
         </div>
 
         <div className="social-icons">
-          <a href="https://facebook.com..." target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faFacebook} /></a>
-          <a href="https://instagram.com..." target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faInstagram} /></a>
+          <a href="https://www.facebook.com/p/3-Brothers-Ottawa-Landscaping-61578217040373/" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faFacebook} /></a>
+          <a href="https://www.instagram.com/3_brothers_ottawa_landscaping/" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faInstagram} /></a>
         </div>
 
         {/* Hamburger Toggle - Only visible on small screens via CSS */}
