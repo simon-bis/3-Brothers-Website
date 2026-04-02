@@ -28,6 +28,8 @@ const Contact = () => {
     name: '',
     email: '',
     phone: '',
+    address: '',
+    timeline: '',
     message: '',
   });
   
@@ -56,6 +58,24 @@ const Contact = () => {
         } else {
           delete newErr.email;
         }
+      } else if (name === 'phone') {
+        if (!value.trim()) {
+          newErr.phone = t('phoneRequired');
+        } else {
+          delete newErr.phone;
+        }
+      } else if (name === 'address') {
+        if (!value.trim()) {
+          newErr.address = t('addressRequired');
+        } else {
+          delete newErr.address;
+        }
+      } else if (name === 'timeline') {
+        if (!value.trim()) {
+          newErr.timeline = t('timelineRequired');
+        } else {
+          delete newErr.timeline;
+        }
       } else if (name === 'message') {
         if (!value.trim()) {
           newErr.message = t('messageRequired');
@@ -81,6 +101,15 @@ const Contact = () => {
     } else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(form.email)) {
       newErrors.email = t('emailInvalid');
     }
+    if (!form.phone || !form.phone.trim()) {
+      newErrors.phone = t('phoneRequired');
+    }
+    if (!form.address || !form.address.trim()) {
+      newErrors.address = t('addressRequired');
+    }
+    if (!form.timeline || !form.timeline.trim()) {
+      newErrors.timeline = t('timelineRequired');
+    }
     if (!form.message || !form.message.trim()) {
       newErrors.message = t('messageRequired');
     }
@@ -101,6 +130,8 @@ const Contact = () => {
           name: form.name,
           email: form.email,
           phone: form.phone,
+          address: form.address,
+          timeline: form.timeline,
           message: form.message,
         }),
       });
@@ -109,12 +140,12 @@ const Contact = () => {
       
       if (res.ok) {
         let successMsg = t('messageSent');
-        if (form.phone) {
-          const template = t('callWithin24');
-          successMsg += ' ' + template.replace('{phone}', form.phone);
-        }
+        const template = t('contactWithin24');
+        successMsg += ' ' + template
+          .replace('{email}', form.email)
+          .replace('{phone}', form.phone);
         setStatus({ type: 'success', message: successMsg });
-        setForm({ name: '', email: '', phone: '', subject: '', message: '' });
+        setForm({ name: '', email: '', phone: '', address: '', timeline: '', message: '' });
 
         // --- NEW: Meta Pixel / CRM Conversion Tracking ---
         // Checks if the Facebook Pixel is loaded on the page
@@ -219,17 +250,43 @@ const Contact = () => {
               </div>
             </div>
 
-            <div className="field-group">
-              <label htmlFor="phone">{t('phoneNumber')} ({t('optional')})</label>
-              <input
-                type="tel"
-                id="phone"
-                name="phone"
-                value={form.phone}
-                onChange={handleChange}
-              />
+            <div className="form-row">
+              <div className="field-group">
+                <label htmlFor="address">{t('yourAddress')}</label>
+                <input
+                  type="text"
+                  id="address"
+                  name="address"
+                  value={form.address}
+                  onChange={handleChange}
+                />
+                {errors.address && <p className="error-text">{errors.address}</p>}
+              </div>
+              <div className="field-group">
+                <label htmlFor="phone">{t('phoneNumber')}</label>
+                <input
+                  type="tel"
+                  id="phone"
+                  name="phone"
+                  value={form.phone}
+                  onChange={handleChange}
+                />
+                {errors.phone && <p className="error-text">{errors.phone}</p>}
+              </div>
             </div>
 
+            <div className="field-group">
+              <label htmlFor="timeline">{t('projectTimeline')}</label>
+              <input
+                type="text"
+                id="timeline"
+                name="timeline"
+                value={form.timeline}
+                onChange={handleChange}
+                placeholder={t('timelinePlaceholder')}
+              />
+              {errors.timeline && <p className="error-text">{errors.timeline}</p>}
+            </div>
 
             <div className="field-group">
               <label htmlFor="message">{t('yourMessage')}</label>
@@ -237,6 +294,7 @@ const Contact = () => {
                 id="message"
                 name="message"
                 rows="6"
+                placeholder={t('projectDescriptionPlaceholder')}
                 value={form.message}
                 onChange={handleChange}
               />
