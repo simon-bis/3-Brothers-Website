@@ -13,7 +13,6 @@ import interlockImg from '../assets/Interlock/interlock_01.webp';
 import landscapingImg from '../assets/Landscaping/landscaping_01.webp';
 import decksImg from '../assets/Decks_&_Railings/deck_01.webp';
 import wallImg from '../assets/Retaining_Walls/retaining_01.webp';
-import stampedPadImg from '../assets/Stamped_Concrete/stamped_01.webp';
 import pergolaImg from '../assets/Pergolas/pergola_01.webp';
 import repairImg from '../assets/Relevels_&_Repairs/relevel_01.webp';
 import drivewayImg from '../assets/Driveways/driveway_01.webp';
@@ -21,20 +20,21 @@ import fenceImg from '../assets/Fences/fence_01.webp';
 import pressureImg from '../assets/Pressure_Washing_&_Resand/pressure_01.webp';
 import firepitImg from '../assets/Fire_Pits/fire_01.webp';
 import designImg from '../assets/3D_Design/3d_design_01.webp';
+import showroomImg from '../assets/Showroom/Finished_Showroom.webp';
 
 const imagesToPreload = [
   interlockImg,
   landscapingImg,
   decksImg,
-  wallImg, 
-  stampedPadImg,
+  wallImg,
   pergolaImg,
   repairImg,
   drivewayImg,
-  wallImg,
+  fenceImg,
+  pressureImg,
   firepitImg,
   designImg,
-  pressureImg
+  showroomImg
 ];
 
 imagesToPreload.forEach(src => {
@@ -43,6 +43,12 @@ imagesToPreload.forEach(src => {
 });
 
 const services = [
+  {
+    name: 'showroom',
+    translationKey: 'showroom',
+    img: showroomImg,
+    descKey: 'showroomDesc',
+  },
   {
     name: 'interlock',
     translationKey: 'interlock',
@@ -92,12 +98,6 @@ const services = [
     descKey: 'designDesc',
   },
   {
-    name: 'stampedConcrete',
-    translationKey: 'stampedConcrete',
-    img: stampedPadImg,
-    descKey: 'stampedDesc',
-  },
-  {
     name: 'pressureWashing',
     translationKey: 'pressureWashing',
     img: pressureImg,
@@ -125,7 +125,8 @@ const getServiceRoute = (name) => {
   if (name === 'landscaping' || name === 'pergolas') return '/landscaping';
   if (name === 'decks') return '/decks';
   if (name === 'fences') return '/fences';
-  return `/projects#${slug(name)}`; // fallback for others like stampedConcrete
+  if (name === 'showroom') return '/projects#showroom';
+  return `/projects#${slug(name)}`; // fallback for other service anchors
 };
 
 const Home = () => {
@@ -141,7 +142,7 @@ const Home = () => {
       <Helmet>
         <title>{t('homeTitle')}</title>
         <meta name="description" content={t('metaDescription')} />
-        <meta name="keywords" content="landscaping Ottawa, interlock patio, decks, fences, landscaping services, retaining walls, stamped concrete" />
+        <meta name="keywords" content="landscaping Ottawa, interlock patio, decks, fences, landscaping services, retaining walls" />
         <meta name="robots" content="index, follow" />
         <link rel="canonical" href={CONFIG.urls.home} />
         

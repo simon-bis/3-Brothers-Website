@@ -26,7 +26,6 @@ This is a React-based website for 3 Brothers Ottawa Landscaping business. It fea
 │   │   ├── Relevels_&_Repairs/
 │   │   ├── Retaining_Walls/
 │   │   ├── Services_Images/
-│   │   └── Stamped_Concrete/
 │   ├── components/
 │   │   ├── Footer.js
 │   │   ├── Header.js

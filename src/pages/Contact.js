@@ -8,12 +8,12 @@ import interlockImg from '../assets/Interlock/interlock_01.webp';
 import landscapingImg from '../assets/Landscaping/landscaping_01.webp';
 import decksImg from '../assets/Decks_&_Railings/deck_01.webp';
 import wallImg from '../assets/Retaining_Walls/retaining_01.webp';
-import stampedPadImg from '../assets/Stamped_Concrete/stamped_01.webp';
 import pergolaImg from '../assets/Pergolas/pergola_01.webp';
 import repairImg from '../assets/Relevels_&_Repairs/relevel_01.webp';
 import drivewayImg from '../assets/Driveways/driveway_01.webp';
 import fenceImg from '../assets/Fences/fence_01.webp';
 import pressureImg from '../assets/Pressure_Washing_&_Resand/pressure_01.webp';
+import showroomIMG from '../assets/Showroom/Finished_Showroom.webp';
 
 // fontawesome icons used on contact page
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -168,7 +168,7 @@ const Contact = () => {
     }
   };
 
-  const projectImages = [interlockImg, landscapingImg, decksImg, wallImg, stampedPadImg, pergolaImg, repairImg, drivewayImg, fenceImg, pressureImg];
+  const projectImages = [interlockImg, showroomIMG, landscapingImg, decksImg, wallImg, pergolaImg, repairImg, drivewayImg, fenceImg, pressureImg];
 
   return (
     <div className="contact-page">
@@ -325,7 +325,7 @@ const Contact = () => {
         <h3>{t('projectsTitle')}</h3>
         <div className="projects-grid">
           {projectImages.map((img, idx) => {
-            const projectTypes = [t('interlock'), t('landscaping'), t('decking'), t('retainingWalls'), t('stampedConcrete'), t('pergolas'), t('relevel'), t('driveways'), t('fences'), t('pressureWashing')];
+            const projectTypes = [t('interlock'), t('landscaping'), t('decking'), t('retainingWalls'), t('pergolas'), t('relevel'), t('driveways'), t('fences'), t('pressureWashing')];
             const projectType = projectTypes[idx % projectTypes.length];
             return (
               <div key={idx} className="project-thumb">

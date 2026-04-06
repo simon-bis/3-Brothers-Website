@@ -11,25 +11,25 @@ const interlockImages = importAll(require.context('../assets/Interlock', false, 
 const retainingImages = importAll(require.context('../assets/Retaining_Walls', false, /\.(webp|jpe?g)$/));
 const landscapingImages = importAll(require.context('../assets/Landscaping', false, /\.(webp|jpe?g)$/));
 const drivewaysImages = importAll(require.context('../assets/Driveways', false, /\.(webp|jpe?g)$/));
-const stampedImages = importAll(require.context('../assets/Stamped_Concrete', false, /\.(webp|jpe?g)$/));
 const firepitsImages = importAll(require.context('../assets/Fire_Pits', false, /\.(webp|jpe?g)$/));
 const decksImages = importAll(require.context('../assets/Decks_&_Railings', false, /\.(webp|jpe?g)$/));
 const fencesImages = importAll(require.context('../assets/Fences', false, /\.(webp|jpe?g)$/));
 const designImages = importAll(require.context('../assets/3D_Design', false, /\.(webp|jpe?g)$/));
+const showroomImages = importAll(require.context('../assets/Showroom', false, /\.(webp|jpe?g)$/));
 const pressureImages = importAll(require.context('../assets/Pressure_Washing_&_Resand', false, /\.(webp|jpe?g)$/));
 const pergolasImages = importAll(require.context('../assets/Pergolas', false, /\.(webp|jpe?g)$/));
 const relevelImages = importAll(require.context('../assets/Relevels_&_Repairs', false, /\.(webp|jpe?g)$/));
 
 const services = [
   {
+    id: 'showroom',
+    titleKey: 'showroom',
+    images: showroomImages,
+  },
+  {
     id: 'interlock',
     titleKey: 'interlock',
     images: interlockImages,
-  },
-  {
-    id: 'retaining-walls',
-    titleKey: 'retainingWalls',
-    images: retainingImages,
   },
   {
     id: 'landscaping',
@@ -37,14 +37,24 @@ const services = [
     images: landscapingImages,
   },
   {
+    id: 'decks',
+    titleKey: 'decking',
+    images: decksImages,
+  },
+  {
+    id: '3d-design',
+    titleKey: 'design',
+    images: designImages,
+  },
+  {
+    id: 'retaining-walls',
+    titleKey: 'retainingWalls',
+    images: retainingImages,
+  },
+  {
     id: 'driveways',
     titleKey: 'driveways',
     images: drivewaysImages,
-  },
-  {
-    id: 'stamped-concrete',
-    titleKey: 'stampedConcrete',
-    images: stampedImages,
   },
   {
     id: 'fire-pits',
@@ -52,19 +62,9 @@ const services = [
     images: firepitsImages,
   },
   {
-    id: 'decks',
-    titleKey: 'decking',
-    images: decksImages,
-  },
-  {
     id: 'fences',
     titleKey: 'fences',
     images: fencesImages,
-  },
-  {
-    id: '3d-design',
-    titleKey: 'design',
-    images: designImages,
   },
   {
     id: 'pressure-washing',

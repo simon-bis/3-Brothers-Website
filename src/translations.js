@@ -25,7 +25,7 @@ export const translations = {
     decksDesc: 'Building custom decks using natural wood or weather-resistant PVC materials to create functional lounging and dining spaces.',
     firePixtsDesc: 'Installing custom gas or propane fire pits with integrated gas lines, using either pre-made metal units or custom-built stone and interlock structures.',
     designDesc: '3D Design - Digital 3D models of your project to plan layouts, elevations, and material choices before construction starts.',
-    stampedDesc: 'Poured concrete surfaces featuring dyed and stamped patterns to resemble natural stone, slate, or brick.',
+    showroomDesc: 'Visit our showroom at 920 Belfast Road to explore samples, materials, and design options for your landscape project.',
     pressureDesc: 'Deep cleaning pavers and applying fresh polymeric sand to joints to eliminate weeds and ensure proper drainage.',
     pergolaDesc: 'Design and assembly of wood or PVC pergolas to add shade and structure to your backyard or patio and maximize its space.',
     relevelDesc: 'Fixing cracked stones and re-leveling sunken interlock pads to correct pooling water and uneven surfaces.',
@@ -35,10 +35,10 @@ export const translations = {
     driveways: 'Driveways',
     firePits: 'Fire Pits',
     design: '3D Design',
+    showroom: 'Showroom',
     pressureWashing: 'Pressure Washing',
     pergolas: 'Pergolas',
     relevel: 'Relevel & Repairs',
-    stampedConcrete: 'Stamped Concrete',
     
     // Footer
     footerServices: 'Services',
@@ -304,7 +304,7 @@ export const translations = {
     decksDesc: 'Construction de terrasses personnalisées à l\'aide de bois naturel ou de matériaux PVC résistants aux intempéries pour créer des aires de détente et des espaces repas fonctionnels.',
     firePixtsDesc: 'Installation sur mesure de foyers au gaz ou au propane comprenant des canalisations d\'alimentation incorporées de façon discrète et harmonieuse à l\'aide d\'unités métalliques préfabriquées ou de structures en pierre ou en pavés unis.',
     designDesc: 'Modèles 3D numériques personnalisés permettant de bien visualiser votre projet avant le début des travaux et ainsi bien planifier les dispositions, les écarts au niveau de l\'élévation et le choix des matériaux.',
-    stampedDesc: 'Surfaces en béton coulé avec motifs teints et estampés pour reproduire fidèlement la pierre naturelle, l\'ardoise ou la brique.',
+    showroomDesc: 'Visitez notre salle d\'exposition à 920 Belfast Road pour découvrir des échantillons, des matériaux et des options de conception pour votre projet paysager.',
     pressureDesc: 'Nettoyage en profondeur des pavés et application de nouveau sable polymère aux interstices afin d\'éliminer les herbes indésirables et d\'assurer un drainage optimal.',
     pergolaDesc: 'Conception et assemblage de pergolas en bois ou PVC pour créer des zones d\'ombre, structurer et optimiser l\'espace de votre cour arrière ou patio.',
     relevelDesc: 'Réparation des pierres fissurées et nivelage des pavés unis enfoncés pour corriger les surfaces inégales et prévenir l\'accumulation d\'eau.',
@@ -314,10 +314,10 @@ export const translations = {
     driveways: 'Allées',
     firePits: 'Foyers',
     design: 'Conception 3D',
+    showroom: 'Salle d’exposition',
     pressureWashing: 'Nettoyage haute pression',
     pergolas: 'Pergolas',
     relevel: 'Nivelage et réparations',
-    stampedConcrete: 'Béton estampé',
    
     // Footer
     footerServices: 'Services',
