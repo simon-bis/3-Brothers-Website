@@ -120,12 +120,13 @@ const services = [
 const slug = (name) => name.replace(/[^\w]+/g, '-').replace(/^-+|-+$/g, '').toLowerCase();
 
 const getServiceRoute = (name) => {
-  const interlockServices = ['interlock', 'retainingWalls', 'driveways', 'firePits', 'design', 'pressureWashing', 'relevel'];
+  const interlockServices = ['interlock', 'retainingWalls', 'driveways', 'firePits', 'pressureWashing', 'relevel'];
   if (interlockServices.includes(name)) return '/interlock';
   if (name === 'landscaping' || name === 'pergolas') return '/landscaping';
   if (name === 'decks') return '/decks';
   if (name === 'fences') return '/fences';
   if (name === 'showroom') return '/projects#showroom';
+  if (name === 'design') return '/projects#3d-design';
   return `/projects#${slug(name)}`; // fallback for other service anchors
 };
 
