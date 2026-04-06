@@ -122,7 +122,7 @@ export const generateLocalBusinessSchema = () => {
     ],
     'sameAs': [
       'https://www.facebook.com/p/3-Brothers-Ottawa-Landscaping-61578217040373/',
-      'https://www.instagram.com/3_brothers_ottawa_landscaping/'
+      'https://www.instagram.com/3brothersottawalandscaping/'
     ]
   };
 };
