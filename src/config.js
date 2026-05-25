@@ -14,7 +14,7 @@ export const CONFIG = {
 
   // Contact Information
   contact: {
-    email: process.env.REACT_APP_EMAIL || '3brothersottawalandscaping@gmail.com',
+    email: process.env.REACT_APP_EMAIL || 'info@3brothersottawalandscaping.ca',
     phone: process.env.REACT_APP_PHONE || '+16137983968',
     phoneDisplay: process.env.REACT_APP_PHONE_DISPLAY || '(613) 798-3968',
   },

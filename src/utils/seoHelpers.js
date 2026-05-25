@@ -96,7 +96,7 @@ export const generateLocalBusinessSchema = () => {
     'image': 'https://www.3brothersottawalandscaping.ca/logo.png',
     'description': 'Professional landscaping, interlock, decks, and fencing services in Ottawa. Free estimates. Over 10 years of experience.',
     'telephone': '+1-613-798-3968',
-    'email': '3brothersottawalandscaping@gmail.com',
+    'email': 'info@3brothersottawalandscaping.ca',
     'url': CONFIG.domain,
     'priceRange': '$$$',
     'address': {

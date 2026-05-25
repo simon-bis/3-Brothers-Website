@@ -31,7 +31,7 @@ function Footer() {
         </p>
         <p className="contact-item">
           <FontAwesomeIcon icon={faEnvelope} className="contact-icon" />
-          <a href="mailto:3brothersottawalandscaping@gmail.com">3brothersottawalandscaping@gmail.com</a>
+          <a href="mailto:info@3brothersottawalandscaping.ca">info@3brothersottawalandscaping.ca</a>
         </p>
         <p className="contact-item">
           <FontAwesomeIcon icon={faPhone} className="contact-icon" />

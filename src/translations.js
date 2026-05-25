@@ -13,7 +13,7 @@ export const translations = {
     // Home Page
     homeTitle: 'Ottawa Landscaping Company | 3 Brothers Ottawa Landscaping',
     heroTitle: 'Ottawa Landscaping Company You Can Trust',
-    getQuote: 'Get a Quote',
+    getQuote: 'Get a Free Quote',
     ourServices: 'Our Services',
     
     // Service Descriptions
@@ -292,7 +292,7 @@ export const translations = {
     // Home Page
     homeTitle: '3 Brothers Ottawa Landscaping | Entreprise de paysagisme à Ottawa',
     heroTitle: 'Entreprise de paysagisme de la région d\'Ottawa en qui vous pouvez faire confiance',
-    getQuote: 'Obtenir un devis',
+    getQuote: 'Obtenir un devis gratuit',
     ourServices: 'Nos services',
    
     // Service Descriptions

@@ -175,7 +175,7 @@ const Contact = () => {
       <Helmet>
         <title>{t('contactTitle')}</title>
         <meta name="description" content={t('contactPageMeta')} />
-        <meta name="keywords" content="contact 3 Brothers Landscaping, get a quote, landscaping estimate, free consultation, Ottawa" />
+        <meta name="keywords" content="contact 3 Brothers Landscaping, get a free quote, landscaping estimate, free consultation, Ottawa" />
         <link rel="canonical" href={CONFIG.urls.contact} />
         
         {/* Open Graph Tags */}
