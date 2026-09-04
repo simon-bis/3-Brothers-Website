@@ -11,9 +11,9 @@ import basketweave from '../../assets/Services_Images/basketweave.webp';
 import herringbone from '../../assets/Services_Images/herringbone.webp';
 import running_bond from '../../assets/Services_Images/running_bond.webp';
 import regular_random from '../../assets/Services_Images/blu_60.jpeg';
-import interlock03 from '../../assets/Interlock/interlock_03.webp';
-import interlock04 from '../../assets/Interlock/interlock_04.webp';
-import relevel03 from '../../assets/Relevels_&_Repairs/relevel_03.webp';
+import interlock01 from '../../assets/Interlock/interlock_14.webp';
+import interlock02 from '../../assets/Interlock/interlock_01.webp';
+import interlock03 from '../../assets/Interlock/interlock_02.webp';
 
 
 const Interlock = () => {
@@ -170,16 +170,16 @@ const calculatePrice = (s) => {
           </div>
         </div>
 
-        <h3>{t('interlockPatternsTitle')}</h3>
+        <h3>{t('interlockGallery')}</h3>
         <div className="gallery">
           <Link to="/projects#interlock">
-            <img src={interlock03} alt={t('interlockGalleryImg1Alt')} />
+            <img src={interlock01} alt={t('interlockGalleryImg1Alt')} />
           </Link>
           <Link to="/projects#interlock">
-            <img src={interlock04} alt={t('interlockGalleryImg2Alt')} />
+            <img src={interlock02} alt={t('interlockGalleryImg2Alt')} />
           </Link> 
           <Link to="/projects#relevel-repairs">
-            <img src={relevel03} alt={t('interlockGalleryImg3Alt')} />
+            <img src={interlock03} alt={t('interlockGalleryImg3Alt')} />
           </Link>
         </div>
 

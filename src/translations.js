@@ -113,6 +113,7 @@ export const translations = {
     sqftLabel: 'Square Footage:',
     estimatedPriceLabel: 'Estimated Price:',
     interlockPatternsTitle: 'Interlock Patterns',
+    interlockGallery: 'Gallery',
     choosePatterns: 'Choose from our popular patterns:',
     patternRunningBond: 'Running Bond',
     patternBasketweave: 'Basketweave',
@@ -125,9 +126,9 @@ export const translations = {
     patternHerringboneAlt: 'Interlock paving pattern – Herringbone',
     patternRegularRandomAlt: 'Interlock paving pattern – Regular Random',
     interlockEstimateDetail: 'For a precise quote, we’ll need to visit your site, assess the area, and take measurements. Don’t worry if the estimate exceeds your budget—our expert designers can create a customized plan to fit your financial needs.',
-    interlockGalleryImg1Alt: 'Professional interlock paving installation in Ottawa by 3 Brothers Landscaping',
-    interlockGalleryImg2Alt: 'Custom interlock walkway project in Ottawa by 3 Brothers Landscaping',
-    interlockGalleryImg3Alt: 'Interlock pad relevel and repair service in Ottawa',
+    interlockGalleryImg1Alt: 'Beautiful interlock driveway installation in Ottawa by 3 Brothers Landscaping',
+    interlockGalleryImg2Alt: 'Custom backyard interlock installation in Ottawa by 3 Brothers Landscaping',
+    interlockGalleryImg3Alt: 'Backyard patio interlock project in Ottawa by 3 Brothers Landscaping',
 
     // Shared UI
     requestEstimate: 'Request a free estimate',
@@ -393,6 +394,7 @@ export const translations = {
     sqftLabel: 'Pieds carrés :',
     estimatedPriceLabel: 'Prix estimé :',
     interlockPatternsTitle: 'Motifs de pavé',
+    interlockGallery: 'Galerie',
     choosePatterns: 'Choisissez parmi nos motifs populaires :',
     patternRunningBond: 'Rang décalé (Running Bond)',
     patternBasketweave: 'Tressage (Basketweave)',
@@ -406,9 +408,9 @@ export const translations = {
     patternHerringboneAlt: 'Motif de pavage interlock chevron',
     patternRegularRandomAlt: 'Motif de pavage interlock aléatoire régulier',
     interlockEstimateDetail: 'Pour un devis précis, nous devrons visiter le site où vous souhaitez les travaux, évaluer la zone et prendre des mesures. Ne vous inquiétez pas si l\'estimation dépasse votre budget — nos concepteurs experts peuvent créer un plan personnalisé adapté à vos besoins financiers.',
-    interlockGalleryImg1Alt: 'Installation professionnelle de pavé interlock dans la région d\'Ottawa par 3 Brothers Landscaping',
-    interlockGalleryImg2Alt: 'Projet de chemin en pavé interlock personnalisé dans la région d\'Ottawa par 3 Brothers Landscaping',
-    interlockGalleryImg3Alt: 'Service de remise à niveau et réparation de pavés interlock dans la région d\'Ottawa',
+    interlockGalleryImg1Alt: 'Belle allée en pavé interlock installée à Ottawa par 3 Brothers Landscaping',
+    interlockGalleryImg2Alt: 'Installation sur mesure de pavé interlock dans une cour arrière à Ottawa par 3 Brothers Landscaping',
+    interlockGalleryImg3Alt: 'Projet de patio arrière en pavé interlock à Ottawa par 3 Brothers Landscaping',
 
 
     // Shared UI

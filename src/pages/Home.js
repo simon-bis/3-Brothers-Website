@@ -15,7 +15,7 @@ import decksImg from '../assets/Decks_&_Railings/deck_01.webp';
 import wallImg from '../assets/Retaining_Walls/retaining_01.webp';
 import pergolaImg from '../assets/Pergolas/pergola_01.webp';
 import repairImg from '../assets/Relevels_&_Repairs/relevel_01.webp';
-import drivewayImg from '../assets/Driveways/driveway_01.webp';
+import drivewayImg from '../assets/Driveways/driveway_02.webp';
 import fenceImg from '../assets/Fences/fence_01.webp';
 import pressureImg from '../assets/Pressure_Washing_&_Resand/pressure_01.webp';
 import firepitImg from '../assets/Fire_Pits/fire_01.webp';
